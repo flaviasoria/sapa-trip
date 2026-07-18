@@ -310,7 +310,7 @@ section[id] { scroll-margin-top: 90px; }   /* compensa o cabeçalho fixo ao usar
 .split p { margin-bottom: 16px; }
 .split .highlight { color: var(--purple); font-weight: 600; }
 
-.section-head { text-align: center; margin-bottom: 14px; }
+.section-head { text-align: center; margin-bottom: 48px; }
 .section-head h2 { font-size: 2.2rem; }
 .section-title-row {
   display: flex;
@@ -381,6 +381,7 @@ section[id] { scroll-margin-top: 90px; }   /* compensa o cabeçalho fixo ao usar
 .badge.sold   { background: var(--magenta); }
 .badge.few    { background: var(--orange); }
 .badge.done   { background: var(--pink-card); color: var(--magenta); border: 1px solid var(--magenta); }
+.badge.open   { background: #2e7d32; }
 
 /* ---------- Lista de próximas viagens (página viagens) ---------- */
 .trip-list { display: flex; flex-direction: column; gap: 22px; }
@@ -409,6 +410,7 @@ section[id] { scroll-margin-top: 90px; }   /* compensa o cabeçalho fixo ao usar
 .trip-tag.done { background: var(--magenta-deep); }
 .trip-tag.sold { background: var(--magenta); }
 .trip-tag.few  { background: var(--orange); }
+.trip-tag.open { background: #2e7d32; }
 .trip-row .trip-info { padding: 24px 26px 24px 0; }
 .trip-row .trip-place {
   display: flex; align-items: center; gap: 8px;
@@ -739,6 +741,12 @@ section[id] { scroll-margin-top: 90px; }   /* compensa o cabeçalho fixo ao usar
     url('images/mogi/hero.jpg'),
     var(--grad-photo);
 }
+.trip-hero.t-minas {
+  background-image:
+    linear-gradient(180deg, rgba(20,40,20,0.10) 0%, rgba(20,40,20,0.72) 100%),
+    url('images/minas/hero.jpg'),
+    var(--grad-photo);
+}
 .trip-hero-inner { padding-top: 60px; padding-bottom: 64px; color: #fff; }
 .trip-hero .eyebrow { color: #fff; opacity: .9; font-size: 1.4rem; }
 .trip-hero h1 { color: #fff; font-size: 3.4rem; margin: 6px 0 14px; }
@@ -784,6 +792,37 @@ section[id] { scroll-margin-top: 90px; }   /* compensa o cabeçalho fixo ao usar
   gap: 26px;
   max-width: 920px;
   margin: 0 auto;
+}
+.highlight-item {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.highlight-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #fff;
+  box-shadow: var(--shadow);
+  flex-shrink: 0;
+}
+.highlight-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.highlight-item h4 {
+  font-size: 1rem;
+  margin: 0;
+  color: var(--purple);
+}
+.highlight-item p {
+  font-size: .9rem;
+  color: var(--text-muted);
+  margin: 0;
 }
 .hl-card { text-align: center; }
 .hl-card img {
