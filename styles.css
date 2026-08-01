@@ -378,7 +378,7 @@ section[id] { scroll-margin-top: 90px; }   /* compensa o cabeçalho fixo ao usar
   color: var(--white);
   white-space: nowrap;
 }
-.badge.sold   { background: var(--magenta); }
+.badge.sold   { background: var(--orange); }
 .badge.few    { background: var(--orange); }
 .badge.done   { background: var(--pink-card); color: var(--magenta); border: 1px solid var(--magenta); }
 .badge.open   { background: #2e7d32; }
