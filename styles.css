@@ -747,6 +747,12 @@ section[id] { scroll-margin-top: 90px; }   /* compensa o cabeçalho fixo ao usar
     url('images/minas/hero.jpg'),
     var(--grad-photo);
 }
+.trip-hero.t-paraty {
+  background-image:
+    linear-gradient(180deg, rgba(10,30,50,0.10) 0%, rgba(10,30,50,0.72) 100%),
+    url('images/paraty/hero.jpg'),
+    var(--grad-photo);
+}
 .trip-hero-inner { padding-top: 60px; padding-bottom: 64px; color: #fff; }
 .trip-hero .eyebrow { color: #fff; opacity: .9; font-size: 1.4rem; }
 .trip-hero h1 { color: #fff; font-size: 3.4rem; margin: 6px 0 14px; }
