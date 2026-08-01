@@ -408,7 +408,7 @@ section[id] { scroll-margin-top: 90px; }   /* compensa o cabeçalho fixo ao usar
   border-radius: 0 8px 8px 0;
 }
 .trip-tag.done { background: var(--magenta-deep); }
-.trip-tag.sold { background: var(--magenta); }
+.trip-tag.sold { background: var(--orange); }
 .trip-tag.few  { background: var(--orange); }
 .trip-tag.open { background: #2e7d32; }
 .trip-row .trip-info { padding: 24px 26px 24px 0; }
